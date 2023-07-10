@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context="com.laonda.kc.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/scrollLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/btnJoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join" />
+
+            <Button
+                android:id="@+id/btnLeave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leave" />
+
+            <Button
+                android:id="@+id/btnUnsubscribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unsubscribe" />
+
+            <Button
+                android:id="@+id/btnSpeaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speaker / Receiver" />
+
+            <Button
+                android:id="@+id/btnUnPub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UnPublish / Publish" />
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swith Camera" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
