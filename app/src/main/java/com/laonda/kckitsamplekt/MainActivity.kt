@@ -23,10 +23,8 @@ import kotlinx.coroutines.launch
 class MainActivity : AppCompatActivity() {
     private val TAG = "MainActivity"
 
-    private val TEST_APP_ID = "Conference3"
-    private val TEST_SECRET_KEY = "Conference3_secret"
-    private val TEST_GET_TOKEN_URL = "https://ticket-api.cod2f.dev/v1/client/access-token"
-    private val TEST_GET_SESSION_URL = "https://ticket-api.cod2f.dev/v1/client/session-node"
+    private val TEST_APP_ID = "Meet3"
+    private val TEST_SECRET_KEY = "Meet3_secret"
     private val TEST_ROOM_ID = "shawn"
 
     private var isPublish = true
@@ -136,7 +134,7 @@ class MainActivity : AppCompatActivity() {
         config.countryCode = applicationContext.resources.configuration.locale.country
         config.appID = "Meet3"
         config.apiToken = "klang"
-        config.sessionNode = "ws://3.37.135.207:7780/ws"
+        config.sessionNode = "wss://ss.klang.network/ws"
         config.user = "shawnAndroid"
         config.context = applicationContext
         config.captureWidth = 640
@@ -151,10 +149,6 @@ class MainActivity : AppCompatActivity() {
         config.enableHPF = true
         config.maxBitrate = 500
 
-//        getServiceInfo();
-
-
-//        getServiceInfo();
         kcSessionManager.initWithConfig(config, listener)
 
         val onClickListener =
